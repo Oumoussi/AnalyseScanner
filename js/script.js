@@ -27,6 +27,8 @@ function loadRT() {
             .attr("target", "_blank")
             .text((d) => d["o:label"]);
 
+
+            
         rows
             .append("td")
             .append("button")

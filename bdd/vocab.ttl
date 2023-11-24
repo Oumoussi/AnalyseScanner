@@ -1,0 +1,47 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix o: <http://omeka.org/s/vocabs/o#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix gs: <https://Analyse.univ-paris8.fr/onto/gs#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#>.
+
+<https://Analyse.univ-paris8.fr/onto/gs#> a owl:Ontology ;
+    dcterms:title "Analyseur xray" .
+
+gs:image a rdfs:Class ;
+    rdfs:label "xray" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+gs:resultat a rdfs:Class ;
+    rdfs:label "resultat" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+gs:idimage a rdf:Property ;
+    rdfs:label "idimage" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+gs:idresultat a rdf:Property ;
+    rdfs:label "idresultat" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+gs:result a rdf:Property ;
+    rdfs:label "result" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+gs:front a rdf:Property ;
+    rdfs:label "front" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+gs:side a rdf:Property ;
+    rdfs:label "side" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .

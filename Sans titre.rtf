@@ -1,10 +1,43 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2709
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+Le rapport de projet que vous avez fourni décrit le développement et la mise en œuvre d'un modèle d'apprentissage profond pour l'analyse d'images radiographiques du thorax et la génération d'impressions textuelles. Ce modèle est une intégration de diverses techniques et méthodologies sophistiquées. Relions ces composants aux sections de votre code :
 
-\f0\fs24 \cf0 EL MEHDI EL MOUFID\
-ABDERAHIM OUMOUSSI\
-SOUFYANE TIRAOUI}
+Objectif et Énoncé du Problème :
+
+L'objectif du modèle est d'automatiser la génération d'impressions textuelles à partir d'images radiographiques du thorax, améliorant ainsi l'efficacité et la précision du diagnostic.
+Dans votre code, cela se reflète dans la conception globale qui intègre le traitement d'images et les capacités de traitement du langage naturel (NLP).
+Architecture du Modèle :
+
+Le modèle utilise des réseaux neuronaux convolutionnels (CNN) et des réseaux neuronaux récurrents (RNN), exploitant EfficientNetB7 pour l'extraction de caractéristiques d'image et un RNN personnalisé pour la génération de texte.
+Le code définit le modèle EfficientNetB7 pour le traitement d'image et utilise un cadre Encoder-Decoder avec un mécanisme d'attention pour générer du texte.
+Approvisionnement et Prétraitement des Données :
+
+Les images sont converties en niveaux de gris et normalisées, et les données textuelles sont préparées par tokenisation et padding de séquence.
+Cela correspond aux sections de prétraitement d'image et de préparation de fonctionnalités textuelles de votre code.
+Extraction et Transformation des Caractéristiques :
+
+EfficientNetB7 est utilisé pour l'extraction de caractéristiques d'image, et les séquences de tokens sont préparées pour le traitement RNN.
+Ceci est visible dans le code où EfficientNetB7 est chargé et utilisé, et les données textuelles sont traitées par tokenisation.
+Processus de Formation et Optimisation :
+
+Le modèle utilise une boucle d'entraînement personnalisée avec GradientTape de TensorFlow, l'optimiseur Adam et une fonction de perte spécialisée.
+Les aspects liés à la formation peuvent ne pas être explicitement présents dans l'extrait de code que vous avez fourni, car il se concentre davantage sur le déploiement et l'inférence du modèle.
+Mise en Œuvre de la Recherche de Faisceau pour l'Inférence :
+
+La recherche de faisceau est utilisée pendant l'inférence pour générer la séquence de texte la plus probable.
+Votre code comprend une mise en œuvre détaillée de l'algorithme de recherche de faisceau.
+Évaluation et Validation du Modèle :
+
+La performance du modèle est évaluée à l'aide des scores BLEU et validée sur un ensemble de données divisé.
+Bien que des métriques d'évaluation spécifiques comme les scores BLEU ne soient pas visibles dans le code fourni, elles sont probablement utilisées dans une autre partie du projet.
+Déploiement et Test du Modèle Final :
+
+Après la formation, les poids du modèle sont sauvegardés pour être réutilisés, et le modèle est testé sur de nouveaux échantillons de données.
+Le code démontre le chargement des poids du modèle et la génération de prédictions sur de nouvelles données.
+Discussion et Résultats :
+
+Le modèle extrait avec précision les caractéristiques des images radiographiques et génère des descriptions textuelles pertinentes, évaluées à l'aide des scores BLEU.
+Cela s'aligne avec la fonctionnalité globale et les sorties démontrées dans votre code.
+Conclusion :
+
+Le projet représente une avancée significative dans l'imagerie médicale et l'IA, combinant les capacités de traitement d'image d'EfficientNetB7 avec la génération de langage avancée d'un RNN.
+Votre code illustre cette approche à double facette, mettant en évidence l'intégration des techniques de traitement d'image et de génération de texte.
+Votre code représente une partie cruciale de ce projet, se concentrant sur la mise en œuvre pratique de l'architecture du modèle, l'extraction de caractéristiques, la génération de texte et les processus d'inférence.

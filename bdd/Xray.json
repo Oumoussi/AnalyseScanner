@@ -1,0 +1,53 @@
+{
+    "o:label": "Xray",
+    "o:resource_template_property": [
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "title",
+            "label": "Title"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [],
+            "vocabulary_namespace_uri": "https:\/\/Analyse.univ-paris8.fr\/onto\/gs",
+            "vocabulary_label": "Analyseur",
+            "local_name": "front",
+            "label": "front"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [],
+            "vocabulary_namespace_uri": "https:\/\/Analyse.univ-paris8.fr\/onto\/gs",
+            "vocabulary_label": "Analyseur",
+            "local_name": "side",
+            "label": "side"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [],
+            "vocabulary_namespace_uri": "https:\/\/Analyse.univ-paris8.fr\/onto\/gs",
+            "vocabulary_label": "Analyseur",
+            "local_name": "idimage",
+            "label": "idimage"
+        }
+    ]
+}
